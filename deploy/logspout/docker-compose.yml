@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  logspout:
+    image: 949191617935.dkr.ecr.cn-north-1.amazonaws.com.cn/jm-elk/logspout:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      ROUTE_URIS: ${ROUTE_URIS}
+      LOGSTASH_TAGS: "docker,dev"
+      LOGSTASH_FIELDS: "ship=${SHIP_NAME}"
+    restart: on-failure
+    network_mode: "host"
