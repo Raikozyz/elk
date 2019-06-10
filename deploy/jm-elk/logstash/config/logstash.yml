@@ -9,3 +9,9 @@ xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 #
 xpack.monitoring.elasticsearch.username: elastic
 xpack.monitoring.elasticsearch.password: changeme
+
+## Uncomment the followings after setting up new password
+#
+# xpack.monitoring.enabled: true
+# xpack.monitoring.elasticsearch.username: logstash_system
+# xpack.monitoring.elasticsearch.password: logstash_system-password

@@ -11,3 +11,8 @@ xpack.monitoring.ui.container.elasticsearch.enabled: true
 #
 elasticsearch.username: elastic
 elasticsearch.password: changeme
+
+## Change the default user and password
+#
+# elasticsearch.username: kibana
+# elasticsearch.password: kibana-password
