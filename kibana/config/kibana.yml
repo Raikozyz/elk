@@ -11,3 +11,6 @@ xpack.monitoring.ui.container.elasticsearch.enabled: true
 #
 elasticsearch.username: elastic
 elasticsearch.password: changeme
+
+# allow API status check with auth
+status.allowAnonymous: true
