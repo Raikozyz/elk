@@ -7,7 +7,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       ROUTE_URIS: ${ROUTE_URIS}
-      LOGSTASH_TAGS: "docker,dev"
+      LOGSTASH_TAGS: "${LOGSTASH_TAGS}"
       LOGSTASH_FIELDS: "ship=${SHIP_NAME}"
     restart: on-failure
-    network_mode: "host"

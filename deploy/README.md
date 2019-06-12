@@ -153,10 +153,19 @@ docker-compose restart
 
 - **ROUTE_URIS：** Logstash 监听地址
 - **SHIP_NAME：** 机器名称 *(Tip: ship 运输 container)*
+- **LOGSTASH_TAGS**：Logstash 上的 **tag** 内容
 
 修改`.env`隐藏文件，假设 **Logstash** 部署位于 192.168.10.10服务器之上，监听端口为 TCP 5000，那么设定值为 `logstash+tcp://192.168.10.10:5000`。
 
 修改 **SHIP_NAME**，将该值设定为当前机器名称，例如 `gf-dev`。
+
+**LOGSTASH_TAGS** 可用的值，多值使用逗号`,`分隔：
+
+- **docker**: 默认必填
+- **dev**: 开发环境
+- **testing**: 测试环境
+- **staging**: 演练环境
+- **prod**: 生产环境
 
 #### Step 3: 启动 Docker Compose
 
