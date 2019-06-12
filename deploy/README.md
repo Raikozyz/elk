@@ -125,6 +125,12 @@ docker-compose logs -f
 
 例如，物理内存有4GB，那么设定值可以为`-Xmx1g -Xms1g`
 
+修改完成需要重启服务
+
+```sh
+docker-compose restart
+```
+
 ------
 
 ### 部署logspout日志采集器
