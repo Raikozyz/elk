@@ -151,8 +151,8 @@ docker-compose restart
 
 **配置参数：**
 
-- **ROUTE_URIS：**Logstash 监听地址
-- **SHIP_NAME：**机器名称 *(Tip: ship 运输 container)*
+- **ROUTE_URIS：** Logstash 监听地址
+- **SHIP_NAME：** 机器名称 *(Tip: ship 运输 container)*
 
 修改`.env`隐藏文件，假设 **Logstash** 部署位于 192.168.10.10服务器之上，监听端口为 TCP 5000，那么设定值为 `logstash+tcp://192.168.10.10:5000`。
 
